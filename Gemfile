@@ -70,3 +70,7 @@ group :test do
   gem "selenium-webdriver"
 end
 
+
+gem "pagy", "~> 9.0"
+
+gem "httparty", "~> 0.22.0"

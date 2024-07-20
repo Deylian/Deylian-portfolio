@@ -3,5 +3,11 @@
     <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Deylian Heykoop</h2>
     <p class="mt-6 text-lg leading-8 text-gray-300">Hello, I am Deylian Heykoop and I am a <%= @age %> year old boy from the Netherlands.
     I program in Ruby on rails. And I know a little bit of javascript.</p>
+    
   </div>
+  
 </div>
+<% 0.upto(100) do %>
+<div style="height:500px">&nbsp;</div>
+<%= turbo_frame_tag "about-page",loading: "lazy", src:about_index_path %>
+<% end %>
